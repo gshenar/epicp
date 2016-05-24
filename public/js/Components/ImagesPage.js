@@ -3,7 +3,6 @@ import {amber900} from 'material-ui/styles/colors';
 import {amber600} from 'material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Divider from 'material-ui/divider';
 import ImageCard from './ImageCard';
 import ImageCardList from './ImageCardList';
 import AppBar from './AppBar';
