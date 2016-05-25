@@ -5,6 +5,7 @@ var webpack = require("webpack");
 
 var dir_js = path.resolve(__dirname, 'public/js');
 var dir_html = path.resolve(__dirname, 'public/html');
+var dir_less = path.resolve(__dirname, 'public/styles');
 var dir_build = path.resolve(__dirname, 'build');
 
 module.exports = {
@@ -18,13 +19,17 @@ module.exports = {
             {
                 loader: 'babel-loader',
                 test: dir_js,
-            }
+            },
+            { 
+                test: /\.less$/, 
+                loader: "style!css!less" }
         ]
     },
     plugins: [
         // Simply copies the files over
         new CopyWebpackPlugin([
-            { from: dir_html } // to: output.path
+            { from: dir_html }, // to: output.path
+            { from: dir_less },
         ]),
         new webpack.ProvidePlugin({
         	"react": "react",

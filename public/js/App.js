@@ -9,6 +9,7 @@ import Main from "./Main";
 import ImagesPage from './Components/ImagesPage';
 import UploadPage from './Components/UploadPage'; 
 
+require("../styles/body.less");
 
 $(function() {
 	injectTapEventPlugin();
