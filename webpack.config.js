@@ -29,7 +29,7 @@ module.exports = {
         // Simply copies the files over
         new CopyWebpackPlugin([
             { from: dir_html }, // to: output.path
-            { from: dir_less },
+            { from: dir_less, to: dir_build + "/styles" },
         ]),
         new webpack.ProvidePlugin({
         	"react": "react",
