@@ -8,7 +8,7 @@ var dir_html = path.resolve(__dirname, 'public/html');
 var dir_build = path.resolve(__dirname, 'build');
 
 module.exports = {
-    entry: path.resolve(dir_js, 'videoloader.js'),
+    entry: path.resolve(dir_js, 'App.js'),
     output: {
         path: dir_build,
         filename: 'bundle.js'

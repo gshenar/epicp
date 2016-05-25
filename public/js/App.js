@@ -21,5 +21,5 @@ $(function() {
 	      <Route path="photos" component={ImagesPage} />
 	    </Route>
 	  </Router>), 
-	  document.getElementById("content"));
+	  document.body);
 });
